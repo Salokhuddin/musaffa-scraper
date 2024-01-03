@@ -22,9 +22,9 @@ def main():
     driver.get(login_link)
     
     email_form = driver.find_element(By.ID, 'email')
-    fill_in(email_form, 'salohiddin.kutbiddinov@musaffa.com')
+    fill_in(email_form, 'email') # email is hidden
     pwd_form = driver.find_element(By.ID, 'pwd')
-    fill_in(pwd_form, 'Googlecom_0000')
+    fill_in(pwd_form, 'password') # password is hidden
     login_button = driver.find_element(By.CLASS_NAME, 'btn.btn-success')
     login_button.click()
 
