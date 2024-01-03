@@ -22,9 +22,9 @@ def main():
     driver.get(login_link)
     
     email_form = driver.find_element(By.ID, 'email')
-    fill_in(email_form, 'email') # email is hidden
+    fill_in(email_form, 'email') # email is hidden (please contact the repo owner)
     pwd_form = driver.find_element(By.ID, 'pwd')
-    fill_in(pwd_form, 'password') # password is hidden
+    fill_in(pwd_form, 'password') # password is hidden (please contact the repo owner)
     login_button = driver.find_element(By.CLASS_NAME, 'btn.btn-success')
     login_button.click()
 
